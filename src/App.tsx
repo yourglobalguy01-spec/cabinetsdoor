@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { SmoothScroll } from './components/layout/SmoothScroll'
-import { Preloader } from './components/layout/Preloader'
 import { CustomCursor } from './components/ui/CustomCursor'
 import { Magnetic } from './components/ui/Magnetic'
 import { Hero } from './components/sections/Hero'
@@ -12,7 +11,6 @@ import { Projects } from './components/sections/Projects'
 import { Footer } from './components/layout/Footer'
 
 function App() {
-  const [loading, setLoading] = useState(true)
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -26,7 +24,6 @@ function App() {
   return (
     <>
       <CustomCursor />
-      {loading && <Preloader onComplete={() => setLoading(false)} />}
       <SmoothScroll>
       <div className="relative z-10 text-white">
         <nav 

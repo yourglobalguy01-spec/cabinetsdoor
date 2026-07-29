@@ -63,7 +63,7 @@ export function Configurator() {
       })
 
       // 3D Cover Flow Effect for each card
-      cardsRef.current.forEach((card, i) => {
+      cardsRef.current.forEach((card) => {
         if (!card) return
         
         // Setup initial state for non-active cards
@@ -206,7 +206,7 @@ export function Configurator() {
           {STYLES.map((style, i) => (
             <div 
               key={style.id}
-              ref={el => cardsRef.current[i] = el}
+              ref={el => { cardsRef.current[i] = el }}
               onClick={() => setSelectedDoor(style)}
               className="relative w-[30vh] md:w-[40vh] h-[60vh] md:h-[75vh] flex-shrink-0 flex items-center justify-center transform-style-3d cursor-none"
               data-cursor="view"

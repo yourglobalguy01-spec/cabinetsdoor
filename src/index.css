@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #F7F5F2;
+  --color-brand-dark: #1D1D1D;
+  --color-brand-walnut: #6B4F3A;
+  --color-brand-oak: #C89A62;
+  --color-brand-cream: #EFE8DE;
+  --color-brand-stone: #B7B2A8;
+  --color-brand-gold: #C8A45B;
+
+  --font-heading: "Canela", "Cormorant Garamond", serif;
+  --font-body: "Inter", sans-serif;
+  --font-button: "Manrope", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-dark font-body antialiased;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-normal;
+  }
+
+  button {
+    @apply font-button;
+  }
+}
+
+/* Custom scrollbar to match Lenis smooth scrolling (hide native) */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Hide scrollbar for premium panels */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.custom-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}

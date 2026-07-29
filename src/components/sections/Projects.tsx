@@ -4,10 +4,14 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
+import nawaabsImg from '../../assets/ nawaabs .jpeg'
+import rajdhaniImg from '../../assets/Rajdhani sweets.jpeg'
+import beautyImg from '../../assets/Beauty addix.jpeg'
+
 const PROJECTS = [
-  { id: 1, name: 'Nawaabs', location: 'Commercial Project', year: '2025', image: '/images/luxury_kitchen_hero_1785351624417.png' },
-  { id: 2, name: 'Rajdhani Sweets', location: 'Commercial Project', year: '2024', image: '/images/luxury_wardrobe_1785351636494.png' },
-  { id: 3, name: 'Beauty Addix', location: 'Commercial Project', year: '2025', image: '/images/luxury_bathroom_1785351647878.png' },
+  { id: 1, name: 'Nawaabs', location: 'Commercial Project', year: '2025', image: nawaabsImg },
+  { id: 2, name: 'Rajdhani Sweets', location: 'Commercial Project', year: '2024', image: rajdhaniImg },
+  { id: 3, name: 'Beauty Addix', location: 'Commercial Project', year: '2025', image: beautyImg },
 ]
 
 export function Projects() {

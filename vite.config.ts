@@ -11,8 +11,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  base: './', // Ensures assets load correctly on Hostinger regardless of folder structure
   build: {
-    target: 'esnext',
+    target: 'es2020', // Better browser compatibility than esnext
     outDir: 'dist',
     chunkSizeWarningLimit: 1000,
     rollupOptions: {

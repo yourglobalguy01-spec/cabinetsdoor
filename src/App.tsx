@@ -2,8 +2,11 @@ import { useState, useEffect } from 'react'
 import { SmoothScroll } from './components/layout/SmoothScroll'
 import { CustomCursor } from './components/ui/CustomCursor'
 import { Magnetic } from './components/ui/Magnetic'
+import { MenuOverlay } from './components/layout/MenuOverlay'
 import { Hero } from './components/sections/Hero'
-import { OurStory } from './components/sections/OurStory'
+import { AboutUs } from './components/sections/AboutUs'
+import { UseCases } from './components/sections/UseCases'
+import { ContactInfo } from './components/sections/ContactInfo'
 import { ProductCollection } from './components/sections/ProductCollection'
 import { ColourStudio } from './components/sections/ColourStudio'
 import { Configurator } from './components/sections/Configurator'
@@ -12,6 +15,7 @@ import { Footer } from './components/layout/Footer'
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +28,7 @@ function App() {
   return (
     <>
       <CustomCursor />
+      <MenuOverlay isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
       <SmoothScroll>
       <div className="relative z-10 text-white">
         <nav 
@@ -40,20 +45,26 @@ function App() {
             Maple Leaf Doors
           </div>
           <Magnetic>
-            <button className="font-button text-sm uppercase tracking-wider pointer-events-auto hover:opacity-70 transition-opacity">Menu</button>
+            <button 
+              onClick={() => setIsMenuOpen(true)}
+              className="font-button text-sm uppercase tracking-wider pointer-events-auto hover:opacity-70 transition-opacity"
+            >
+              Menu
+            </button>
           </Magnetic>
         </nav>
 
         <main>
-          <Hero />
+          <div id="home"><Hero /></div>
           
           <div className="bg-brand-bg text-brand-dark relative z-20">
-            <OurStory />
-            
-            <ProductCollection />
-            <ColourStudio />
-            <Configurator />
-            <Projects />
+            <div id="about"><AboutUs /></div>
+            <div id="collections"><ProductCollection /></div>
+            <div id="applications"><UseCases /></div>
+            <div id="colour-studio"><ColourStudio /></div>
+            <div id="bespoke-options"><Configurator /></div>
+            <div id="projects"><Projects /></div>
+            <div id="contact"><ContactInfo /></div>
           </div>
         </main>
         <Footer />

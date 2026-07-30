@@ -64,7 +64,7 @@ export function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
   return (
     <div 
       ref={overlayRef}
-      className="fixed inset-0 bg-brand-dark z-[100] flex flex-col px-8 md:px-24 pointer-events-auto h-[100dvh] overflow-hidden"
+      className="fixed inset-0 bg-brand-dark z-[100] flex flex-col px-4 md:px-24 pointer-events-auto h-[100dvh] overflow-hidden"
       style={{ clipPath: 'circle(0% at 100% 0%)' }}
     >
       {/* Header section in normal flow but visually matches */}
@@ -89,7 +89,7 @@ export function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               ref={el => { linksRef.current[i] = el }}
               href={`#${item.id}`}
               onClick={(e) => handleScroll(e, item.id)}
-              className="font-heading text-3xl md:text-4xl lg:text-5xl text-brand-bg hover:text-brand-oak transition-colors w-max uppercase tracking-wide font-light py-1"
+              className="font-heading text-2xl md:text-4xl lg:text-5xl text-brand-bg hover:text-brand-oak transition-colors w-max uppercase tracking-wide font-light py-1"
             >
               {item.label}
             </a>

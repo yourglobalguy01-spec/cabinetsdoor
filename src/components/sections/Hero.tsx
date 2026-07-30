@@ -41,7 +41,7 @@ export function Hero() {
   }, [])
 
   return (
-    <section ref={containerRef} className="relative w-full h-screen overflow-hidden bg-brand-dark">
+    <section ref={containerRef} className="relative w-full min-h-[100svh] overflow-hidden bg-brand-dark">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -55,8 +55,8 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div ref={textRef} className="relative z-10 w-full h-full flex flex-col justify-end items-center pb-32 px-8 text-white">
-        <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl tracking-tight text-center mb-6">
+      <div ref={textRef} className="relative z-10 w-full h-full flex flex-col justify-end items-center pb-16 px-4 md:pb-32 md:px-8 text-white">
+        <h1 className="font-heading text-5xl md:text-7xl lg:text-9xl tracking-tight text-center mb-6">
           The Art of Living.
         </h1>
         <p className="font-body font-light text-lg md:text-xl text-brand-stone max-w-2xl text-center">

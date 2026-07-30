@@ -47,15 +47,15 @@ export function OurStory() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-32 md:py-48 px-8 bg-brand-bg text-brand-dark overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col gap-24">
+    <section ref={sectionRef} className="py-20 md:py-48 px-4 md:px-8 bg-brand-bg text-brand-dark overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col gap-12 md:gap-24">
         
         {/* Top Content Area */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
           <div className="lg:col-span-7">
             <h3 className="font-mono text-sm tracking-widest text-brand-stone mb-12 uppercase">Our Story</h3>
             <div className="overflow-hidden">
-              <h2 ref={titleRef} className="font-heading text-5xl md:text-7xl lg:text-8xl leading-[1.1] text-brand-dark tracking-tight">
+              <h2 ref={titleRef} className="font-heading text-4xl md:text-7xl lg:text-8xl leading-[1.1] text-brand-dark tracking-tight">
                 A legacy of fine craftsmanship meeting modern innovation.
               </h2>
             </div>

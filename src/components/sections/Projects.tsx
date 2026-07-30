@@ -81,7 +81,7 @@ export function Projects() {
 
       <div ref={wrapperRef} className="flex h-[70vh] md:h-[80vh] w-[max-content] items-center px-[10vw] gap-[15vw]">
         {PROJECTS.map((project, i) => (
-          <div key={project.id} className="relative w-[80vw] md:w-[60vw] h-[60vh] md:h-[70vh] flex-shrink-0 flex items-center">
+          <div key={project.id} className="relative w-[90vw] md:w-[60vw] h-[60vh] md:h-[70vh] flex-shrink-0 flex items-center">
             
             {/* The Image Container - Masked */}
             <div 
@@ -107,7 +107,7 @@ export function Projects() {
                 </span>
                 
                 <div className="overflow-visible">
-                  <h2 className="project-title font-heading text-5xl md:text-7xl lg:text-9xl text-white tracking-tight leading-[0.9] whitespace-nowrap drop-shadow-2xl">
+                  <h2 className="project-title font-heading text-4xl md:text-7xl lg:text-9xl text-white tracking-tight leading-[0.9] whitespace-nowrap drop-shadow-2xl">
                     {project.name}
                   </h2>
                 </div>

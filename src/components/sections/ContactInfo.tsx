@@ -62,41 +62,69 @@ export function ContactInfo() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-48 bg-brand-bg overflow-hidden w-full text-brand-dark relative">
+    <section ref={sectionRef} className="py-16 md:py-48 bg-brand-bg overflow-hidden w-full text-brand-dark relative">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-brand-dark/10"></div>
       
       <div className="max-w-[1500px] px-4 md:px-8 mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
         
-        {/* Left: Contact Details */}
-        <div className="flex-1 w-full lg:w-5/12 flex flex-col justify-center">
+        {/* Left: Contact Details & Text */}
+        <div className="flex-1 w-full lg:w-5/12 flex flex-col justify-center lg:pr-12">
           
-          <div className="mb-24">
-            <h3 className="stagger-fade text-brand-oak font-mono tracking-[0.3em] mb-6 text-[10px] uppercase font-bold">CALL OR VISIT US</h3>
-            <div className="stagger-fade h-[1px] w-12 bg-brand-oak mb-10"></div>
-            
-            <div className="stagger-fade font-body text-sm md:text-base tracking-[0.2em] leading-loose text-brand-dark/90">
-              <p className="hover:text-brand-oak transition-colors duration-300 cursor-pointer">C: +1 647 667-6786</p>
-              <p className="hover:text-brand-oak transition-colors duration-300 cursor-pointer">E: INFO@MAPLELEAFDOORS.COM</p>
-              <p className="mt-6 text-brand-dark/60 text-xs">9#173 GLIDDEN RD</p>
-              <p className="text-brand-dark/60 text-xs">BRAMPTON, ON L6W3L9</p>
+          {/* Main Story Section */}
+          <div className="mb-20">
+            <div className="stagger-fade flex items-center gap-4 mb-8">
+              <div className="h-[1px] w-8 bg-brand-oak"></div>
+              <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-brand-oak font-bold">OUR APPROACH</span>
             </div>
-          </div>
-
-          <div>
-            <h4 className="stagger-fade font-mono text-[10px] font-bold uppercase tracking-[0.3em] mb-8 text-brand-dark">GETTING TO KNOW EACH OTHER</h4>
-            <div className="font-body text-sm md:text-base leading-relaxed text-brand-dark/80 font-light flex flex-col gap-6 pr-0 lg:pr-12">
+            
+            <h2 className="stagger-fade font-heading text-4xl md:text-5xl lg:text-[3.5rem] text-brand-dark font-light mb-10 leading-[1.1]">
+              GETTING TO KNOW <br className="hidden md:block"/> <span className="italic text-brand-oak">EACH OTHER</span>
+            </h2>
+            
+            <div className="font-body text-base lg:text-[17px] leading-[2.2] text-brand-dark/75 font-light flex flex-col gap-6">
               <p className="stagger-fade">
-                Let's see if we're a good match. We'll make an appointment to meet and discuss your design objectives, because each client brings us his or her individual wish list. We make sure to listen very carefully. Open communication is crucial to a successful relationship; helping you interpret your wish list is the first step in turning a house into a home.
+                Let's see if we're a good match. We'll make an appointment to meet and discuss your design objectives, because each client brings us his or her individual wish list. We make sure to listen very carefully. 
               </p>
               <p className="stagger-fade">
+                Open communication is crucial to a successful relationship; helping you interpret your wish list is the first step in turning a house into a home.
+              </p>
+              <p className="stagger-fade text-brand-dark/90 font-normal">
                 Now that we've gotten to know each other and defined the scope of work for your project, our creative ideas are flowing and we can't wait to share them with you!
               </p>
             </div>
           </div>
+
+          {/* Contact Details Grid */}
+          <div className="stagger-fade pt-12 border-t border-brand-dark/10">
+            <h3 className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold text-brand-dark/40 mb-10">CONTACT & LOCATION</h3>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-8">
+              {/* Reach Out */}
+              <div className="flex flex-col gap-3">
+                <span className="font-mono text-[10px] text-brand-dark/40 tracking-[0.2em] uppercase">REACH OUT</span>
+                <a href="tel:+16476676786" className="font-body text-brand-dark text-lg md:text-xl tracking-wide hover:text-brand-oak transition-colors duration-300">
+                  +1 647 667-6786
+                </a>
+                <a href="mailto:info@mapleleafdoors.com" className="font-body text-brand-dark/70 text-sm tracking-wide hover:text-brand-oak transition-colors duration-300">
+                  INFO@MAPLELEAFDOORS.COM
+                </a>
+              </div>
+              
+              {/* Visit Studio */}
+              <div className="flex flex-col gap-3">
+                <span className="font-mono text-[10px] text-brand-dark/40 tracking-[0.2em] uppercase">VISIT STUDIO</span>
+                <address className="font-body text-brand-dark/80 text-sm md:text-base not-italic leading-[2] tracking-wide">
+                  9#173 Glidden Rd<br/>
+                  Brampton, ON L6W3L9
+                </address>
+              </div>
+            </div>
+          </div>
+          
         </div>
 
         {/* Right: Floating Collage */}
-        <div className="collage-container flex-1 w-full lg:w-7/12 relative mt-24 lg:mt-0 h-[600px] md:h-[800px] flex items-center justify-center">
+        <div className="collage-container flex-1 w-full lg:w-7/12 relative mt-16 lg:mt-0 h-[400px] md:h-[600px] lg:h-[800px] flex items-center justify-center">
           
           <div className="absolute w-full h-full inset-0">
             {/* Image 1 */}

@@ -79,16 +79,16 @@ export function AboutUs() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 bg-brand-bg overflow-hidden w-full text-brand-dark relative z-10">
+    <section ref={sectionRef} className="py-16 md:py-32 bg-brand-bg overflow-hidden w-full text-brand-dark relative z-10">
       <div className="max-w-[1400px] px-4 md:px-12 mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 items-center lg:items-start">
         
         {/* Left: About Text & Image */}
         <div className="flex-1 w-full flex flex-col items-start relative">
           
-          <div className="absolute -left-8 md:-left-16 top-[40%] -translate-y-1/2 -rotate-90 origin-center text-brand-oak font-mono tracking-[0.3em] whitespace-nowrap text-sm md:text-lg z-20">
+          <div className="hidden md:block absolute -left-8 md:-left-16 top-[40%] -translate-y-1/2 -rotate-90 origin-center text-brand-oak font-mono tracking-[0.3em] whitespace-nowrap text-sm md:text-lg z-20">
             ABOUT US
           </div>
-          <div className="absolute left-0 md:-left-8 top-[40%] w-[1px] h-24 bg-brand-oak z-20"></div>
+          <div className="hidden md:block absolute left-0 md:-left-8 top-[40%] w-[1px] h-24 bg-brand-oak z-20"></div>
 
           {/* Premium Grayscale Image */}
           <div className="relative w-full md:w-[85%] aspect-[4/5] mb-[-15%] md:mb-[-20%] z-0 ml-auto md:ml-8 lg:ml-16 shadow-2xl overflow-hidden">
@@ -102,7 +102,7 @@ export function AboutUs() {
 
           {/* Dark Overlay Box */}
           <div className="bg-brand-dark text-brand-bg p-8 md:p-14 w-[95%] md:w-[90%] relative z-20 shadow-2xl">
-            <h2 className="font-heading text-4xl md:text-5xl text-brand-oak mb-8 overflow-hidden font-light tracking-wide">
+            <h2 className="font-heading text-3xl md:text-5xl text-brand-oak mb-8 overflow-hidden font-light tracking-wide">
               <span className="title-reveal inline-block">WHO WE ARE</span>
             </h2>
             <p className="stagger-fade font-body text-xs leading-[2] uppercase tracking-[0.15em] mb-8 text-brand-bg/90">
@@ -119,7 +119,7 @@ export function AboutUs() {
           
           <div className="mb-12 pl-6 border-l-[2px] border-brand-oak relative">
             <p className="stagger-fade font-mono text-[10px] tracking-[0.3em] uppercase text-brand-dark/50 mb-3">VISION AND ENJOYMENT</p>
-            <h3 className="font-heading text-4xl md:text-5xl uppercase text-brand-dark overflow-hidden leading-[1.1] font-light">
+            <h3 className="font-heading text-3xl md:text-5xl uppercase text-brand-dark overflow-hidden leading-[1.1] font-light">
               <span className="title-reveal inline-block">HOW WE</span> <br/>
               <span className="title-reveal inline-block text-brand-dark">ARE DISTINCTIVE</span>
             </h3>

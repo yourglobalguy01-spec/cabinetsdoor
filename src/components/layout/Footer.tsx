@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <footer className="bg-brand-dark text-brand-bg py-32 px-8 border-t border-brand-stone/10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+    <footer className="bg-brand-dark text-brand-bg py-16 md:py-32 px-4 md:px-8 border-t border-brand-stone/10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
         
         <div className="flex flex-col justify-between">
           <div>
@@ -30,7 +30,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col md:items-end justify-between">
-          <div className="flex gap-16">
+          <div className="flex gap-10 md:gap-16">
             <ul className="flex flex-col gap-4 font-button text-sm tracking-widest uppercase">
               <li><a href="#" className="hover:text-brand-oak transition-colors">Instagram</a></li>
               <li><a href="#" className="hover:text-brand-oak transition-colors">Pinterest</a></li>

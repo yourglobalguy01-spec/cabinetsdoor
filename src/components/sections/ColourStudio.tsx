@@ -41,7 +41,7 @@ export function ColourStudio() {
   }, [activeColor])
 
   return (
-    <section className="min-h-screen bg-brand-bg py-32 px-8">
+    <section className="min-h-screen bg-brand-bg py-16 md:py-32 px-4 md:px-8">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
         
         <div className="w-full lg:w-1/3 flex flex-col z-20 relative">
@@ -69,7 +69,7 @@ export function ColourStudio() {
         </div>
 
         <div 
-          className="w-full lg:w-2/3 h-[60vh] lg:h-[80vh] relative overflow-hidden bg-brand-stone/10" 
+          className="w-full lg:w-2/3 h-[40vh] md:h-[60vh] lg:h-[80vh] relative overflow-hidden bg-brand-stone/10 mt-8 lg:mt-0" 
           ref={imageContainerRef}
           data-cursor="view"
         >

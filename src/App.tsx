@@ -12,8 +12,10 @@ import { ColourStudio } from './components/sections/ColourStudio'
 import { Configurator } from './components/sections/Configurator'
 import { Projects } from './components/sections/Projects'
 import { Footer } from './components/layout/Footer'
+import { Preloader } from './components/ui/Preloader'
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
   const [scrolled, setScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -28,6 +30,7 @@ function App() {
   return (
     <>
       <CustomCursor />
+      {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <MenuOverlay isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
       <SmoothScroll>
       <div className="relative z-10 text-white">

@@ -137,10 +137,10 @@ export function ContactInfo() {
                <img src="/images/artisan_crafting_1785351660237.png" alt="Healthcare Facility" className="collage-img w-full h-[110%] -top-[5%] object-cover grayscale opacity-90" />
                <div className="absolute inset-0 bg-brand-dark/30 mix-blend-overlay"></div>
                
-               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 z-30">
-                 <h2 className="stagger-fade font-heading text-4xl md:text-5xl text-brand-bg mb-4 font-light mix-blend-difference">MAPLE LEAF <br/><span className="italic text-brand-oak">DOORS</span></h2>
-                 <p className="stagger-fade font-mono text-[9px] md:text-[10px] tracking-[0.4em] text-brand-bg/80 uppercase mb-2 mix-blend-difference">HIGH QUALITY THERMOFOIL DOORS</p>
-                 <div className="stagger-fade w-[1px] h-8 bg-brand-oak mt-4"></div>
+               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-2 md:p-8 z-30">
+                 <h2 className="stagger-fade font-heading text-xl md:text-4xl lg:text-5xl text-brand-bg mb-1 md:mb-4 font-light mix-blend-difference leading-none md:leading-tight">MAPLE LEAF <br/><span className="italic text-brand-oak">DOORS</span></h2>
+                 <p className="stagger-fade font-mono text-[6px] md:text-[10px] tracking-[0.2em] md:tracking-[0.4em] text-brand-bg/80 uppercase mb-1 md:mb-2 mix-blend-difference hidden sm:block">HIGH QUALITY THERMOFOIL DOORS</p>
+                 <div className="stagger-fade w-[1px] h-4 md:h-8 bg-brand-oak mt-2 md:mt-4"></div>
                </div>
             </div>
             

@@ -4,9 +4,9 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-import nawaabsImg from '../../assets/ nawaabs .jpeg'
-import rajdhaniImg from '../../assets/Rajdhani sweets.jpeg'
-import beautyImg from '../../assets/Beauty addix.jpeg'
+import nawaabsImg from '../../assets/nawaabs.jpeg'
+import rajdhaniImg from '../../assets/rajdhani-sweets.jpeg'
+import beautyImg from '../../assets/beauty-addix.jpeg'
 
 const PROJECTS = [
   { id: 1, name: 'Nawaabs', location: 'Commercial Project', year: '2025', image: nawaabsImg },

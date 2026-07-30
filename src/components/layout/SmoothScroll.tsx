@@ -10,6 +10,11 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
   const lenisRef = useRef<Lenis | null>(null)
 
   useEffect(() => {
+    // Disable smooth scroll on mobile for maximum native performance
+    if (window.innerWidth < 768) {
+      return;
+    }
+
     const lenis = new Lenis({
       duration: window.innerWidth < 768 ? 0.8 : 1.0, // Faster on mobile
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),

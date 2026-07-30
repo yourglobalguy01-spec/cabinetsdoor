@@ -11,7 +11,7 @@ export function ProductCollection() {
   const [activeImage, setActiveImage] = useState(COLLECTIONS[0].image)
 
   return (
-    <section className="relative min-h-screen bg-brand-dark text-brand-bg py-32 overflow-hidden">
+    <section className="relative min-h-screen bg-brand-dark text-brand-bg py-16 md:py-32 overflow-hidden">
       {/* Background Image that changes on hover */}
       <div className="absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out opacity-40">
         <img 
@@ -22,8 +22,8 @@ export function ProductCollection() {
         <div className="absolute inset-0 bg-brand-dark/60 mix-blend-multiply" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8">
-        <h3 className="font-mono text-sm tracking-widest text-brand-stone mb-16 uppercase">Product Collection</h3>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
+        <h3 className="font-mono text-sm tracking-widest text-brand-stone mb-12 md:mb-16 uppercase">Product Collection</h3>
         
         <div className="flex flex-col">
           {COLLECTIONS.map((item) => (
@@ -32,7 +32,7 @@ export function ProductCollection() {
               className="group border-b border-brand-stone/20 py-8 cursor-pointer flex justify-between items-center transition-colors hover:border-brand-stone"
               onMouseEnter={() => setActiveImage(item.image)}
             >
-              <h2 className="font-heading text-5xl md:text-7xl text-brand-stone/50 transition-colors duration-500 group-hover:text-brand-bg">
+              <h2 className="font-heading text-4xl md:text-7xl text-brand-stone/50 transition-colors duration-500 group-hover:text-brand-bg">
                 {item.name}
               </h2>
               <span className="font-mono text-brand-stone/50 group-hover:text-brand-bg transition-colors duration-500">

@@ -55,7 +55,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div ref={textRef} className="absolute inset-0 z-10 flex flex-col justify-center md:justify-end items-center pb-0 md:pb-32 px-4 md:px-8 text-white pointer-events-none">
+      <div ref={textRef} className="absolute inset-0 z-10 flex flex-col justify-end items-center pb-24 md:pb-32 px-4 md:px-8 text-white pointer-events-none">
         <h1 className="font-heading text-5xl md:text-7xl lg:text-9xl tracking-tight text-center mb-6">
           The Art of Living.
         </h1>

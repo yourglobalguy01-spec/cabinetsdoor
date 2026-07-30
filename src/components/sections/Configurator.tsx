@@ -212,7 +212,7 @@ export function Configurator() {
       </div>
 
       {/* Dynamic Centralized Info Panel */}
-      <div className="absolute bottom-24 md:bottom-1/2 md:translate-y-1/2 left-8 md:left-16 z-30 pointer-events-none w-[90%] md:w-[350px]">
+      <div className="absolute top-24 md:top-auto md:bottom-1/2 md:translate-y-1/2 left-4 md:left-16 z-30 pointer-events-none w-[90%] md:w-[350px]">
         <div className="overflow-hidden">
           <h1 className="font-heading text-7xl md:text-9xl text-white/5 leading-none mb-[-1.5rem] md:mb-[-2.5rem] ml-[-0.5rem] font-light">
             {STYLES[activeIndex].number}
@@ -241,7 +241,7 @@ export function Configurator() {
               key={style.id}
               ref={el => { cardsRef.current[i] = el }}
               onClick={() => setSelectedDoor(style)}
-              className="relative w-[35vh] md:w-[45vh] h-[65vh] md:h-[75vh] flex-shrink-0 flex items-center justify-center transform-style-3d cursor-pointer group"
+              className="relative w-[60vw] md:w-[45vh] h-[50vh] md:h-[75vh] flex-shrink-0 flex items-center justify-center transform-style-3d cursor-pointer group"
               data-cursor="view"
             >
               {/* Floor Shadow for realism */}

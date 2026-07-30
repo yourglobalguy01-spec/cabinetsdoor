@@ -92,7 +92,7 @@ export function ProductOverlay({ door, onClose }: ProductOverlayProps) {
       </button>
 
       {/* Main Content Container */}
-      <div ref={contentRef} className="relative z-10 max-w-7xl mx-auto px-8 py-24 md:py-32 min-h-screen">
+      <div ref={contentRef} className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-20 md:py-32 min-h-screen">
         
         {/* Top Product Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-center mb-32">
@@ -115,7 +115,7 @@ export function ProductOverlay({ door, onClose }: ProductOverlayProps) {
                 <span className="w-8 h-[1px] bg-white/30" />
                 <span>{door.number}</span>
               </div>
-              <h1 className="font-heading text-5xl md:text-7xl mb-6">{door.name}</h1>
+              <h1 className="font-heading text-4xl md:text-7xl mb-6">{door.name}</h1>
               <p className="font-body font-light text-xl text-white/70 leading-relaxed max-w-lg">
                 {door.description}
               </p>

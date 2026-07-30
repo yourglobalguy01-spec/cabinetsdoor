@@ -86,13 +86,13 @@ export function UseCases() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-48 bg-white overflow-hidden w-full text-brand-dark">
-      <div className="max-w-[1600px] px-4 md:px-12 mx-auto flex flex-col xl:flex-row gap-16 xl:gap-24 items-center xl:items-start">
+    <section ref={sectionRef} className="py-16 md:py-48 bg-white overflow-hidden w-full text-brand-dark">
+      <div className="max-w-[1600px] px-4 md:px-12 mx-auto flex flex-col xl:flex-row gap-12 md:gap-16 xl:gap-24 items-center xl:items-start">
         
         {/* Left: Become Inspired Images */}
         <div className="flex-1 w-full xl:w-5/12 flex flex-col">
-          <div className="mb-16">
-            <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-6 uppercase text-brand-dark overflow-hidden leading-[1.1]">
+          <div className="mb-12 md:mb-16">
+            <h2 className="font-heading text-4xl md:text-6xl lg:text-7xl font-light tracking-wide mb-6 uppercase text-brand-dark overflow-hidden leading-[1.1]">
               <span className="title-reveal inline-block">BECOME</span><br/>
               <span className="title-reveal inline-block italic text-brand-oak pr-4">INSPIRED</span>
             </h2>
@@ -123,13 +123,13 @@ export function UseCases() {
         </div>
 
         {/* Right: Use Cases Info */}
-        <div className="flex-1 w-full xl:w-7/12 bg-brand-bg p-8 md:p-16 lg:p-24 text-brand-dark flex flex-col justify-between mt-12 xl:mt-24 relative shadow-xl">
-          <div className="absolute -top-12 -right-12 text-[150px] font-heading font-light opacity-5 text-brand-dark select-none pointer-events-none parallax-text">
+        <div className="flex-1 w-full xl:w-7/12 bg-brand-bg p-6 md:p-16 lg:p-24 text-brand-dark flex flex-col justify-between mt-8 xl:mt-24 relative shadow-xl">
+          <div className="hidden lg:block absolute -top-12 -right-12 text-[150px] font-heading font-light opacity-5 text-brand-dark select-none pointer-events-none parallax-text">
             APPLICATIONS
           </div>
           
           <div className="relative z-10">
-            <h3 className="font-heading text-4xl md:text-5xl font-light mb-4 overflow-hidden">
+            <h3 className="font-heading text-3xl md:text-5xl font-light mb-4 overflow-hidden">
               <span className="title-reveal inline-block">USE CASES</span>
             </h3>
             <p className="subtitle-fade font-mono text-xs tracking-[0.3em] uppercase mb-20 text-brand-oak">OF THERMOFOIL PANELS</p>

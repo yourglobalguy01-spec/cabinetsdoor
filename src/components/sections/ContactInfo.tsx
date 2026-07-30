@@ -22,23 +22,48 @@ export function ContactInfo() {
         }
       })
       
-      // Floating Collage Parallax
-      gsap.to('.float-img-1', {
-        yPercent: -30,
-        ease: 'none',
-        scrollTrigger: { trigger: sectionRef.current, start: 'top bottom', end: 'bottom top', scrub: true }
-      })
+      let mm = gsap.matchMedia()
       
-      gsap.to('.float-img-2', {
-        yPercent: -15,
-        ease: 'none',
-        scrollTrigger: { trigger: sectionRef.current, start: 'top bottom', end: 'bottom top', scrub: true }
+      mm.add("(min-width: 768px)", () => {
+        // Desktop Floating Collage Parallax
+        gsap.to('.float-img-1', {
+          yPercent: -30,
+          ease: 'none',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top bottom', end: 'bottom top', scrub: true }
+        })
+        
+        gsap.to('.float-img-2', {
+          yPercent: -15,
+          ease: 'none',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top bottom', end: 'bottom top', scrub: true }
+        })
+        
+        gsap.to('.float-img-3', {
+          yPercent: -40,
+          ease: 'none',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top bottom', end: 'bottom top', scrub: true }
+        })
       })
-      
-      gsap.to('.float-img-3', {
-        yPercent: -40,
-        ease: 'none',
-        scrollTrigger: { trigger: sectionRef.current, start: 'top bottom', end: 'bottom top', scrub: true }
+
+      mm.add("(max-width: 767px)", () => {
+        // Mobile Floating Collage Parallax (Reduced to prevent overlapping)
+        gsap.to('.float-img-1', {
+          yPercent: -10,
+          ease: 'none',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top bottom', end: 'bottom top', scrub: true }
+        })
+        
+        gsap.to('.float-img-2', {
+          yPercent: -5,
+          ease: 'none',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top bottom', end: 'bottom top', scrub: true }
+        })
+        
+        gsap.to('.float-img-3', {
+          yPercent: -15,
+          ease: 'none',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top bottom', end: 'bottom top', scrub: true }
+        })
       })
 
       // Image collage sequential reveal
@@ -124,7 +149,7 @@ export function ContactInfo() {
         </div>
 
         {/* Right: Floating Collage */}
-        <div className="collage-container flex-1 w-full lg:w-7/12 relative mt-16 lg:mt-0 h-[400px] md:h-[600px] lg:h-[800px] flex items-center justify-center">
+        <div className="collage-container flex-1 w-full lg:w-7/12 relative mt-16 lg:mt-0 h-[450px] md:h-[600px] lg:h-[800px] flex items-center justify-center">
           
           <div className="absolute w-full h-full inset-0">
             {/* Image 1 */}
